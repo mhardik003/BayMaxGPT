@@ -1,4 +1,3 @@
 *.apk
 *.ptl
-*.pt**.ptl
-*.apk
+*.pt*
