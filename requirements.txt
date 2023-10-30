@@ -7,3 +7,5 @@ streamlit==1.27.1
 transformers==4.34.1
 torch
 accelerate
+optimum
+auto-gptq
