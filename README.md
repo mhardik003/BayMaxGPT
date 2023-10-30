@@ -28,7 +28,7 @@ BayMax is a medical chatbot that can answer questions related to medicines (in t
 * Unzip the dataset from [mashqa.zip](./Dataset/mashqa.zip) and place it in the `data` folder.
 * Run [data_preprocess.ipynb](./data_preprocess.ipynb) notebook to clean the data and store it in the `cleaned_data` folder
 * Run [RAG.ipynb](./RAG.ipynb) notebook to create the vector database and store it in the `vector_db` folder
-* The quantized `.ptl` file for `PyTorch Mobile` based android application can be downloaded from [here](https://drive.google.com/file/d/1YlTLDonBXmDm8kre2zM8fTlrvOWgtwhE/view?usp=sharing). To create your own `.ptl` files use [Create_PTL.ipynb'](./Create_PTL.ipynb).
+* The quantized `.ptl` file for `PyTorch Mobile` based android application can be downloaded from [here](https://drive.google.com/file/d/1YlTLDonBXmDm8kre2zM8fTlrvOWgtwhE/view?usp=sharing). To create your own `.ptl` files, use [Create_PTL.ipynb'](./Create_PTL.ipynb).
 ### Developers
 * [Hardik Mittal](https://github.com/mhardik003)
 * [Astitva Srivastava](https://github.com/AstitvaSri)
