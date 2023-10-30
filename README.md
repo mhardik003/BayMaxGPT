@@ -12,7 +12,7 @@ BayMax is a medical chatbot that can answer questions related to medicines (in t
 #### How it works
 * We first create the vector database using `MiniLM` embeddings and `Faiss` indexing
 * Then we use `RAG` to fetch the answers from the database by converting the Queries given by the user into embeddings and then using `Faiss` to fetch the top 5 most similar embeddings and then using `RAG` to fetch the answers from the database
-* We then send these answers to the model (here we have used quantized [Mistral 7B](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GPTQ))  along with the original query to generate the final answer
+* We then send these answers to the model (here we have used quantized [Mistral 7B](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GPTQ))  along with the original query to generate the final answer.
 * In the webapp, if the user chooses the option to use the context from the data that has been provided, then we also show the context which the model has used to generate the answer to cross verify the legitimacy of the answer
 
 
@@ -28,6 +28,7 @@ BayMax is a medical chatbot that can answer questions related to medicines (in t
 * Unzip the dataset from [mashqa.zip](./Dataset/mashqa.zip) and place it in the `data` folder.
 * Run [data_preprocess.ipynb](./data_preprocess.ipynb) notebook to clean the data and store it in the `cleaned_data` folder
 * Run [RAG.ipynb](./RAG.ipynb) notebook to create the vector database and store it in the `vector_db` folder
+* The ".ptl" for lightweight mobile application can be found [here](https://drive.google.com/file/d/1YlTLDonBXmDm8kre2zM8fTlrvOWgtwhE/view?usp=sharing).
 ### Built by
 * [Hardik Mittal](https://github.com/mhardik003)
 * [Astitva Srivastava](https://github.com/AstitvaSri)
