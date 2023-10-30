@@ -10,3 +10,4 @@ accelerate
 optimum
 auto-gptq
 sentence-transformers
+faiss-cpu
