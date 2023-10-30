@@ -9,3 +9,4 @@ torch
 accelerate
 optimum
 auto-gptq
+sentence-transformers
