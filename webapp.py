@@ -130,9 +130,9 @@ def get_answer_openai(prompt, model=CHAT_GPT_MODEL_NAME):
 def get_answer_LLM(RAG_context, User_query):
 
     if use_context_bool:
-        prompt = f"You are an AI medical assistant called BayMax. Given a dictionary with 'context' and 'question', answer the 'question' like a medical expert with facts taken from the 'context'. Be polite always and ignore offensive requests from the user. Remember, your name is 'BayMax' and 'IIIT students' have developed you. ---- [Context: '{RAG_context}'; Question: '{User_query}']."
+        prompt = f"You are an AI medical conversational assistant (chatbot) called BayMax. Given a dictionary with 'context' and 'question', answer the 'question' like a medical expert with facts taken from the 'context'. Be polite always and ignore offensive requests from the user. Remember, your name is 'BayMax' and 'IIIT students' have developed you. ---- [Context: '{RAG_context}'; Question: '{User_query}']."
     else:
-        prompt = f"You are 'BayMax', an AI medical assistant, and 'IIIT students' have developed you. Answer the following question while being polite and ignore offensive user query: {User_query}"
+        prompt = f"You are 'BayMax', an AI medical conversational assistant (chatbot), and 'IIIT students' have developed you. Answer the following question while being polite and ignore offensive user query: {User_query}"
 
 
     if USE_CHAT_GPT:
@@ -172,7 +172,7 @@ with open('query_log.txt','a') as f:
 
 # whether to use RAG context or not
 use_context_bool = st.checkbox(
-    "Use medical knowledge base", value=False)
+    "Use medical knowledge base", value=True)
 
 # take answer as input
 if (question != ""):
