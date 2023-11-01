@@ -1,5 +1,6 @@
-### BayMax : A Medical Chatbot
-BayMax is a medical chatbot that can answer questions related to medicines (in this case, but can be used over any of the documents that you want to run it over) and it gives the answers by fetching the facts given in the data in realtime, thus making it a very fast and efficient chatbot.
+![](./icons/baymax.png)
+### BayMax : An AI Medical Assistant
+BayMax is a medical care assistant, powered by an LLM, that can answer questions related to medicines (in this case, but can be used over any of the documents that you want to run it over) and it gives the answers by fetching the facts given in the data in realtime, thus making it a very fast and efficient chatbot.
 
 * The model successfully runs on a laptop with 16GB of RAM and 6GB of VRAM
 
